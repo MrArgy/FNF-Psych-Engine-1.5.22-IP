@@ -57,11 +57,6 @@ class TitleState extends MusicBeatState
 
 	public static var initialized:Bool = false;
 
-	var textShit:FlxText = new FlxText(12, FlxG.height - 24, 0, FUCKING HERE AYOOO", 12);
-	versionShit.scrollFactor.set();
-	versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-	add(textShit);
-
 	var blackScreen:FlxSprite;
 	var credGroup:FlxGroup;
 	var credTextShit:Alphabet;
