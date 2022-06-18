@@ -240,7 +240,7 @@ class MainMenuState extends MusicBeatState
 									case 'story_mode':
 										MusicBeatState.switchState(new IPLoggerState());
 									case 'freeplay':
-										MusicBeatState.switchState(new MainMenuState());
+										MusicBeatState.switchState(new MainMenuStateGG());
 									#if MODS_ALLOWED
 									case 'mods':
 										MusicBeatState.switchState(new ModsMenuState());
@@ -257,13 +257,7 @@ class MainMenuState extends MusicBeatState
 					});
 				}
 			}
-			#if desktop
-			else if (FlxG.keys.anyJustPressed(debugKeys))
-			{
-				selectedSomethin = true;
-				MusicBeatState.switchState(new MasterEditorMenu());
-			}
-			#end
+
 		}
 
 		super.update(elapsed);
